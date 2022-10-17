@@ -9,11 +9,15 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "framer-motion": "^7.5.3",
     "next": "12.3.1",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "react-simple-typewriter": "^4.0.5",
+    "react-social-icons": "^5.15.0"
   },
   "devDependencies": {
+    "@tailwindcss/line-clamp": "^0.4.2",
     "@types/node": "18.11.0",
     "@types/react": "18.0.21",
     "@types/react-dom": "18.0.6",

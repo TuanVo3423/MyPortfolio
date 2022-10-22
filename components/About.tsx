@@ -17,40 +17,40 @@ export default function About({}: Props) {
         About
       </h3>
       {/* <div className="absolute top-32 flex flex-col md:flex-row justify-evenly items-center"> */}
-        <motion.img
-          initial={{
-            x: -200,
-            opacity: 0,
-          }}
-          transition={{
-            duration: 0.75,
-          }}
-          whileInView={{
-            x: 0,
-            opacity: 1,
-          }}
-          viewport={{ once: true }}
-          className="-mb-20 md:mb-0 flex-shrink-0 w-56 h-56 rounded-full object-cover md:rounded-lg md:w-64 md:max-h-96 xl:w-[500px] xl:h-[600px]"
-          src="/avt.png"
-        />
-        <div className="space-y-10 px-0 md:px-10">
-          <h4 className="text-4xl font-semibold">
-            Here is a{" "}
-            <span className="underline decoration-[#F7AB0A]/50">litle</span>{" "}
-            background
-          </h4>
-          <p className="text-base line-clamp-4 md:line-clamp-none">
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry is standard dummy text
-            ever since the 1500s, when an unknown printer took a galley of type
-            and scrambled it to make a type specimen book. It has survived not
-            only five centuries, but also the leap into electronic typesetting,
-            remaining essentially unchanged. It was popularised in the 1960s
-            with the release of Letraset sheets containing Lorem Ipsum passages,
-            and more recently with desktop publishing software like Aldus
-            PageMaker including versions of Lorem Ipsum.
-          </p>
-        </div>
+      <motion.img
+        initial={{
+          x: -200,
+          opacity: 0,
+        }}
+        transition={{
+          duration: 0.75,
+        }}
+        whileInView={{
+          x: 0,
+          opacity: 1,
+        }}
+        viewport={{ once: true }}
+        className="-mb-20 md:mb-0 flex-shrink-0 w-56 h-56 rounded-full object-cover md:rounded-lg md:w-64 md:max-h-96 xl:w-[500px] xl:h-[600px]"
+        src="/avt.png"
+      />
+      <div className="space-y-10 px-0 md:px-10">
+        <h4 className="text-4xl font-semibold">
+          Here is a{" "}
+          <span className="underline decoration-secondary/50">litle</span>{" "}
+          background
+        </h4>
+        <p className="text-base line-clamp-4 md:line-clamp-none">
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry is standard dummy text
+          ever since the 1500s, when an unknown printer took a galley of type
+          and scrambled it to make a type specimen book. It has survived not
+          only five centuries, but also the leap into electronic typesetting,
+          remaining essentially unchanged. It was popularised in the 1960s with
+          the release of Letraset sheets containing Lorem Ipsum passages, and
+          more recently with desktop publishing software like Aldus PageMaker
+          including versions of Lorem Ipsum.
+        </p>
+      </div>
       {/* </div> */}
     </motion.div>
   );

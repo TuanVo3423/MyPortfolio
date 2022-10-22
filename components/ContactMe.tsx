@@ -24,7 +24,7 @@ export default function ContactMe({}: Props) {
           <h4 className="md:text-4xl text-2xl font-semibold">
             I have got just what you need.{""}
           </h4>
-          <h4 className="decoration-[#F7AB0A]/50 underline md:text-4xl text-2xl font-semibold text-center">
+          <h4 className="decoration-secondary/50 underline md:text-4xl text-2xl font-semibold text-center">
             Lets talk.
           </h4>
         </div>
@@ -32,7 +32,7 @@ export default function ContactMe({}: Props) {
           <Phone
             size={28}
             weight="bold"
-            className="text-[#F7AB0A] animate-pulse"
+            className="text-secondary animate-pulse"
           />
           <p className="md:text-2xl text-xl">+0984253413</p>
         </div>
@@ -40,7 +40,7 @@ export default function ContactMe({}: Props) {
           <Envelope
             size={28}
             weight="bold"
-            className="text-[#F7AB0A] animate-pulse"
+            className="text-secondary animate-pulse"
           />
           <p className="md:text-2xl text-xl">tuanvanvo2003@gmail.com</p>
         </div>
@@ -48,7 +48,7 @@ export default function ContactMe({}: Props) {
           <MapPin
             size={28}
             weight="bold"
-            className="text-[#F7AB0A] animate-pulse"
+            className="text-secondary animate-pulse"
           />
           <p className="md:text-2xl text-xl">
             Tran Dai Nghia street, Ngu Hoanh Son, Da Nang city.
@@ -83,7 +83,7 @@ export default function ContactMe({}: Props) {
             className="inputContact"
             placeholder="Message"
           />
-          <button className="bg-[#F7AB0A] py-5 px-10 rounded-md text-black font-bold text-lg">
+          <button className="bg-secondary py-5 px-10 rounded-md text-black font-bold text-lg">
             Submit
           </button>
         </form>

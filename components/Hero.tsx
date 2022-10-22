@@ -29,7 +29,7 @@ export default function Hero({}: Props) {
         </h2>
         <h1 className="text-4xl lg:text-5xl font-semibold px-10">
           <span className="mr-3">{text}</span>
-          <Cursor cursorColor="#F7AB0A" />
+          <Cursor cursorColor="secondary" />
         </h1>
         <div className="pt-5 cursor-pointer">
           <Link href={"#about"}>

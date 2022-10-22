@@ -3,8 +3,21 @@ import React from "react";
 import { motion } from "framer-motion";
 type Props = {};
 
+interface project {
+  name: string;
+  description: string;
+  imgPath: string;
+}
 export default function Projects({}: Props) {
-  const projects = [1, 2, 3, 4, 5];
+  const test = [1, 2];
+  const projects: [project] = [
+    {
+      name: "Project 1",
+      description: "des1",
+      imgPath: "fweninfiwe",
+    },
+  ];
+
   return (
     <motion.div
       initial={{
@@ -21,12 +34,12 @@ export default function Projects({}: Props) {
       <h3 className="uppercase absolute top-20 tracking-[20px] text-gray-500 text-2xl">
         Projects
       </h3>
-      <div className=" w-full flex overflow-y-hidden overflow-x-scroll snap-x snap-mandatory z-20 scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB0A]">
+      <div className="w-full flex items-center overflow-y-hidden overflow-x-scroll snap-x snap-mandatory z-20 scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-secondary">
         {/* project */}
-        {projects.map((item, index) => {
+        {test.map((item, index) => {
           return (
             <div
-              className="w-screen h-screen flex flex-col space-y-4 items-center justify-center flex-shrink-0 snap-center p-20 md:p-48"
+              className="w-screen h-screen flex flex-col space-y-4 snap-center items-center justify-center flex-shrink-0 p-20 md:p-48"
               key={index}
             >
               <motion.div
@@ -46,15 +59,15 @@ export default function Projects({}: Props) {
               >
                 <Image
                   src={"/avt.png"}
-                  alt="test"
+                  alt="test1"
                   objectFit="contain"
                   layout="fill"
                 />
               </motion.div>
-              <div className="space-y-10 px-0 md:px-10 max-w-6xl">
+              <div className="space-y-10 px-0 md:px-10 max-w-6xl mx-auto">
                 <h4 className="md:text-4xl text-2xl font-semibold text-center ">
-                  <span className="underline decoration-[#F7AB0A]/50">
-                    Case Study {index + 1} of {projects.length}:
+                  <span className="underline decoration-secondary/50">
+                    Case Study {index} of {test.length}:
                   </span>{" "}
                   Do Something
                 </h4>
@@ -75,7 +88,7 @@ export default function Projects({}: Props) {
           );
         })}
       </div>
-      <div className="w-full absolute top-[30%] bg-[#F7AB0A]/10 left-0 h-[400px] -skew-y-12"></div>
+      <div className="w-full absolute top-[30%] bg-secondary/10 left-0 h-[400px] -skew-y-12"></div>
     </motion.div>
   );
 }

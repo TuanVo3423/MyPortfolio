@@ -14,7 +14,7 @@ const Home: NextPage = () => {
   return (
     <div
       className="bg-[rgb(36,36,36)] text-white h-screen snap-y snap-mandatory overflow-y-scroll overflow-x-hidden z-0
-    scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB0A]
+    scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-secondary scroll-smooth
     "
     >
       <Head>
@@ -51,14 +51,14 @@ const Home: NextPage = () => {
       </section>
 
       {/* Contact me */}
-      <section className="snap-center">
+      <section id="contact" className="snap-center">
         <ContactMe />
       </section>
       <Link href={"#hero"}>
         <ArrowUp
           size={44}
           weight="bold"
-          className="sticky left-[90%] p-2 animate-pulse bottom-10 border-2 border-[#F7AB0A] rounded-full"
+          className="sticky z-[100] cursor-pointer md:left-[90%] left-[82%] p-2 animate-pulse bottom-10 border-2 border-secondary rounded-full"
         />
       </Link>
     </div>

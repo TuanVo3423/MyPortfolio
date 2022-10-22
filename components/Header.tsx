@@ -1,6 +1,8 @@
 import React from "react";
 import { SocialIcon } from "react-social-icons";
 import { motion } from "framer-motion";
+import Link from "next/link";
+import { Envelope } from "phosphor-react";
 
 type Props = {};
 
@@ -26,17 +28,17 @@ export default function Header({}: Props) {
         className="flex flex-row items-center"
       >
         <SocialIcon
-          url="https://twitter.com/jaketrent"
+          url="https://www.instagram.com/titus_3423/"
           fgColor="gray"
           bgColor="transparent"
         />
         <SocialIcon
-          url="https://twitter.com/jaketrent"
+          url="https://github.com/TuanVo3423"
           fgColor="gray"
           bgColor="transparent"
         />
         <SocialIcon
-          url="https://twitter.com/jaketrent"
+          url="https://www.facebook.com/titus3423"
           fgColor="gray"
           bgColor="transparent"
         />
@@ -60,14 +62,21 @@ export default function Header({}: Props) {
         }}
         className="cursor-pointer text-gray-300 flex flex-row items-center"
       >
-        <SocialIcon
-          url="https://email.com/jaketrent"
-          fgColor="gray"
-          bgColor="transparent"
-        />
-        <p className="uppercase text-sm text-gray-400 hidden md:inline-flex">
-          Get it touch
-        </p>
+        <Link href={"#contact"}>
+          <div className="flex flex-row items-center gap-x-2">
+            <Envelope
+              size={32}
+              weight="thin"
+              className="text-gray bg-transparent"
+            />
+            <p className="uppercase text-sm text-gray-400 hidden md:inline-flex">
+              Get it touch
+            </p>
+          </div>
+        </Link>
+        {/* <Link href={"#experience"}>
+          <button className="btnHero">Experience</button>
+        </Link> */}
       </motion.div>
     </header>
   );

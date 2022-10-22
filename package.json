@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@alaya-tech/icons": "^2.1.6",
     "framer-motion": "^7.5.3",
     "next": "12.3.1",
     "phosphor-react": "^1.4.1",

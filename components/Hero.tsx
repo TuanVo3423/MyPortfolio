@@ -8,7 +8,7 @@ type Props = {};
 
 export default function Hero({}: Props) {
   const [text, count] = useTypewriter({
-    words: ["Hello guys", "I am Tuan", "I am fullstack developer."],
+    words: ["Hello gangs,", "I'm Tuan", "I'm fullstack web developer."],
     delaySpeed: 2000,
     loop: true,
   });
@@ -21,10 +21,10 @@ export default function Hero({}: Props) {
         height={128}
         alt="avt"
         objectFit="cover"
-        src="/avt.png"
+        src="/avt02.png"
       />
       <div className="z-20">
-        <h2 className="uppercase text-base tracking-[15px] text-gray-500 pb-2">
+        <h2 className="uppercase text-base md:tracking-[15px] tracking-[5px] text-gray-500 pb-2">
           Software engineer
         </h2>
         <h1 className="text-4xl lg:text-5xl font-semibold px-10">

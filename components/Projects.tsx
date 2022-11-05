@@ -9,12 +9,37 @@ interface project {
   imgPath: string;
 }
 export default function Projects({}: Props) {
-  const test = [1, 2];
-  const projects: [project] = [
+  const projects: project[] = [
     {
-      name: "Project 1",
-      description: "des1",
-      imgPath: "fweninfiwe",
+      name: "AQUA E-Commerce",
+      description:
+        "E-Commerce fullstack using ReactJS, tailwindCss, redux-toolkit, redux-saga, nodejs, expressjs, mongodb, jwt authentication,rest API, paypal checkout.",
+      imgPath: "/aqua.png",
+    },
+    {
+      name: "Blogs App",
+      description:
+        "Programming Blogs-App Application Using Handlebars, Nodejs, ExpressJS, MongoDB. This project is simple with CRUD tasks and easy to get started do backend.",
+      imgPath: "/blog.png",
+    },
+    {
+      name: "Chat Realtime",
+      description:
+        "Programming Real-Time Messaging Application Using ReactJS, Firebase, lodash, antdesign. Login with Google / Facebook. Manage chat rooms. Add members to chat room. Show member list in chat room, Texting.",
+      imgPath: "/chat.png",
+    },
+
+    {
+      name: "Todo App",
+      description:
+        "Programming Todo-App Application Using ReactJS, Firebase, redux-toolkit.",
+      imgPath: "/todo.png",
+    },
+    {
+      name: "Tracking Covid 19",
+      description:
+        "Tracking Covid 19 simple UI with ReactJS, Material UI. This project help you to learn about ReactJS and fetch API.",
+      imgPath: "/tracking.png",
     },
   ];
 
@@ -36,7 +61,7 @@ export default function Projects({}: Props) {
       </h3>
       <div className="w-full flex items-center overflow-y-hidden overflow-x-scroll snap-x snap-mandatory z-20 scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-secondary">
         {/* project */}
-        {test.map((item, index) => {
+        {projects.map((item, index) => {
           return (
             <div
               className="w-screen h-screen flex flex-col space-y-4 snap-center items-center justify-center flex-shrink-0 p-20 md:p-48"
@@ -58,7 +83,7 @@ export default function Projects({}: Props) {
                 className="md:w-full md:h-full w-full h-[40%] relative"
               >
                 <Image
-                  src={"/avt.png"}
+                  src={`${item.imgPath}`}
                   alt="test1"
                   objectFit="contain"
                   layout="fill"
@@ -67,21 +92,12 @@ export default function Projects({}: Props) {
               <div className="space-y-10 px-0 md:px-10 max-w-6xl mx-auto">
                 <h4 className="md:text-4xl text-2xl font-semibold text-center ">
                   <span className="underline decoration-secondary/50">
-                    Case Study {index} of {test.length}:
+                    Case Study {index + 1} of {projects.length}:
                   </span>{" "}
-                  Do Something
+                  {item.name}
                 </h4>
-                <p className="text-base text-center md:text-left xl:line-clamp-none line-clamp-4">
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry is
-                  standard dummy text ever since the 1500s, when an unknown
-                  printer took a galley of type and scrambled it to make a type
-                  specimen book. It has survived not only five centuries, but
-                  also the leap into electronic typesetting, remaining
-                  essentially unchanged. It was popularised in the 1960s with
-                  the release of Letraset sheets containing Lorem Ipsum
-                  passages, and more recently with desktop publishing software
-                  like Aldus PageMaker including versions of Lorem Ipsum
+                <p className="text-base text-center md:text-left xl:line-clamp-none line-clamp-4 whitespace-pre-wrap">
+                  {item.description}
                 </p>
               </div>
             </div>

@@ -43,11 +43,11 @@ export default function About({}: Props) {
         <p className="text-base line-clamp-4 md:line-clamp-none">
           Hi gangs, I'm Tuan, you can call me "titus". I'm currently a 2nd year
           university student of Viet Han information and communication
-          technology and my major is computer science. I am an organized person
-          and always focused on creating results. While setting goals, I am
-          always very realistic, I am always working to develop ways to get
-          things done more efficiently and more often than I expect. I am able
-          to work well under pressure and adhere to strict deadlines.
+          technology from 21GIT class and my major is computer science. I am an
+          organized person and always focused on creating results. While setting
+          goals, I am always very realistic, I am always working to develop ways
+          to get things done more efficiently and more often than I expect. I am
+          able to work well under pressure and adhere to strict deadlines.
         </p>
       </div>
       {/* </div> */}

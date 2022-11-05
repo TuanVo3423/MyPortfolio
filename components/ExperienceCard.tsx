@@ -55,7 +55,7 @@ export default function ExperienceCard({ data }: Props) {
             );
           })}
         </div>
-        <p className="uppercase py-5 text-gray-300">
+        <p className="uppercase py-5 md:ml-0 ml-5 text-gray-300">
           Start studying in {data.timestart}, ended in {data.timeend}
         </p>
         <ul className="list-disc space-y-2 ml-5 text-lg">

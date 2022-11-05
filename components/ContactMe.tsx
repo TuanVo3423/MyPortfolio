@@ -15,7 +15,7 @@ export default function ContactMe({}: Props) {
     window.location.href = `mailto:tuanvanvo2003@gmail.com?subject=${data.subject}&body=Hi, my name is ${data.name}. ${data.message} (${data.email})`;
   };
   return (
-    <div className="h-screen relative flex flex-col max-w-7xl overflow-hidden md:text-center text-left md:flex-row px-10 justify-evenly mx-auto items-center">
+    <div className="h-screen relative flex flex-col max-w-7xl overflow-hidden md:text-center text-left md:flex-row px-10 justify-center mx-auto items-center">
       <h3 className="absolute top-20 uppercase text-2xl tracking-[20px] text-gray-500 pb-2">
         Contact
       </h3>
@@ -28,29 +28,29 @@ export default function ContactMe({}: Props) {
             Lets talk.
           </h4>
         </div>
-        <div className="flex items-center justify-center space-x-5">
+        <div className="flex items-center justify-center md:space-x-5 space-x-2">
           <Phone
             size={28}
             weight="bold"
             className="text-secondary animate-pulse"
           />
-          <p className="md:text-2xl text-xl">+0984253413</p>
+          <p className="md:text-xl text-lg">+0984253413</p>
         </div>
-        <div className="flex items-center justify-center space-x-5">
+        <div className="flex items-center justify-center md:space-x-5 space-x-2">
           <Envelope
             size={28}
             weight="bold"
             className="text-secondary animate-pulse"
           />
-          <p className="md:text-2xl text-xl">tuanvanvo2003@gmail.com</p>
+          <p className="md:text-xl text-lg">tuanvanvo2003@gmail.com</p>
         </div>
-        <div className="flex items-center justify-center space-x-5">
+        <div className="flex items-center justify-center md:space-x-5 space-x-2">
           <MapPin
             size={28}
             weight="bold"
             className="text-secondary animate-pulse"
           />
-          <p className="md:text-2xl text-xl">
+          <p className="md:text-xl text-lg">
             Tran Dai Nghia street, Ngu Hoanh Son, Da Nang city.
           </p>
         </div>

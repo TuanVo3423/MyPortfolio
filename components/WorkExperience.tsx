@@ -64,12 +64,12 @@ export default function WorkExperience({}: Props) {
       transition={{
         duration: 1.5,
       }}
-      className="h-screen relative flex flex-col max-w-full overflow-hidden text-left md:flex-row px-10 justify-center mx-auto items-center"
+      className="h-screen relative flex flex-col max-w-full overflow-hidden text-left md:flex-row md:px-10 px-0 justify-center mx-auto items-center"
     >
       <h3 className="uppercase absolute top-20 tracking-[10px] md:tracking-[20px] text-gray-500 text-2xl">
         Experience
       </h3>
-      <div className=" mt-12 w-full flex flex-row space-x-5 p-10 overflow-x-scroll snap-x snap-mandatory scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-secondary">
+      <div className=" mt-12 w-full flex flex-row space-x-5 md:p-10 p-2 overflow-x-scroll snap-x snap-mandatory scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-secondary">
         {data.map((item, index) => {
           return <ExperienceCard data={item} key={index} />;
         })}

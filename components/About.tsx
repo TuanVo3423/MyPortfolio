@@ -32,7 +32,7 @@ export default function About({}: Props) {
         }}
         viewport={{ once: true }}
         className="-mb-20 md:mb-0 flex-shrink-0 w-48 h-48 rounded-full object-cover md:rounded-lg md:w-64 md:max-h-96 xl:w-[500px] xl:h-[600px]"
-        src="/avt03.png"
+        src="/2nd_uni.png"
       />
       <div className="md:space-y-10 space-y-4 px-0 md:px-10">
         <h4 className="text-4xl font-semibold">
@@ -41,7 +41,7 @@ export default function About({}: Props) {
           background
         </h4>
         <p className="text-base line-clamp-4 md:line-clamp-none">
-          Hi gangs, I'm Tuan, you can call me "titus". I'm currently a 2nd year
+          Hi gangs, I'm Tuan, you can call me "titus". I'm currently a 3nd year
           university student of Viet Han information and communication
           technology from 21GIT class and my major is computer science. I am an
           organized person and always focused on creating results. While setting

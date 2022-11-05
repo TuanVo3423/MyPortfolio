@@ -13,20 +13,35 @@ interface skillItem {
 
 export default function Skills({}: Props) {
   const Skills: skillItem[] = [
+    // {
+    //   imgPath: "/html.png",
+    //   percent: 95,
+    //   directionLeft: true,
+    // },
+    // {
+    //   imgPath: "/css.png",
+    //   percent: 85,
+    //   directionLeft: true,
+    // },
+    // {
+    //   imgPath: "/js.png",
+    //   percent: 90,
+    //   directionLeft: true,
+    // },
     {
-      imgPath: "/html.png",
-      percent: 95,
       directionLeft: true,
-    },
-    {
-      imgPath: "/css.png",
-      percent: 85,
-      directionLeft: true,
-    },
-    {
       imgPath: "/js.png",
-      percent: 90,
+      percent: 80,
+    },
+    {
       directionLeft: true,
+      imgPath: "/ts.png",
+      percent: 80,
+    },
+    {
+      directionLeft: true,
+      imgPath: "/chakra.png",
+      percent: 80,
     },
     {
       imgPath: "/tailwind.png",

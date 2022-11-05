@@ -28,8 +28,9 @@ export default function ExperienceCard({ data }: Props) {
       >
         <Image
           src={`${data.imgPath}`}
-          width={128}
-          height={128}
+          objectPosition={data.imgPath === "/avt04.png" ? "center bottom" : ""}
+          width="128px"
+          height="128px"
           objectFit="cover"
           alt="expImg"
           className="object-top rounded-full xl:w-[200px] xl:h-[200px]"
@@ -55,7 +56,7 @@ export default function ExperienceCard({ data }: Props) {
             );
           })}
         </div>
-        <p className="uppercase py-5 text-gray-300">
+        <p className="uppercase py-5 md:ml-0 ml-5 text-gray-300">
           Start studying in {data.timestart}, ended in {data.timeend}
         </p>
         <ul className="list-disc space-y-2 ml-5 text-lg">

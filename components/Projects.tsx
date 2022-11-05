@@ -11,6 +11,12 @@ interface project {
 export default function Projects({}: Props) {
   const projects: project[] = [
     {
+      name: "Generate-tools",
+      description:
+        "Simple tool generate document and images using openAI with langchainJS(framework).",
+      imgPath: "/generate-tools.png",
+    },
+    {
       name: "AQUA E-Commerce",
       description:
         "E-Commerce fullstack using ReactJS, tailwindCss, redux-toolkit, redux-saga, nodejs, expressjs, mongodb, jwt authentication,rest API, paypal checkout.",
